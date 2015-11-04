@@ -10,6 +10,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "_laravel5/public/assets/vendor",
     "test",
     "tests"
   ],
