@@ -1,0 +1,37 @@
+<div layout="row" layout-align="center center" ng-controller="LessonController">
+    <md-whiteframe class="md-whiteframe-3dp" flex="25">
+        <form name="wordForm">
+            <md-input-container>
+                <label>Russian</label>
+                <input required name="rus" ng-model="task.rus" type="text">
+                <div ng-messages="wordForm.rus.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+
+            <md-input-container>
+                <label>English</label>
+                <input required name="en" ng-model="task.en" type="text" >
+                <div ng-messages="wordForm.en.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <div layout="row">
+                <md-button ng-click="addWord()" class="md-raised md-primary" flex>Next</md-button>
+            </div>
+        </form>
+    </md-whiteframe>
+</div>
+
+<style>
+    md-whiteframe{
+        padding: 20px;
+    }
+    md-input-container label:not(.md-no-float){
+        padding-left: 10px;
+    }
+    md-input-container input[type="text"]{
+        font-size: 30px;
+        text-align: center;
+    }
+</style>

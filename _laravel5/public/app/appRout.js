@@ -22,7 +22,7 @@
 
                         .state('lesson', {
                             url: "/lesson",
-                            templateUrl: "views/lesson.html"
+                            templateUrl: "modules/lesson/views/lesson.html"
                         });
 
             });

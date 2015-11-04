@@ -2,15 +2,19 @@
     angular.module(window.appName).service('dictionaryService', function ($localStorage) {
         console.log('dictionaryService');
 
-        $localStorage.dictionary = ($localStorage.dictionary) ? $localStorage.dictionary : [];
+        $localStorage.dictionary = ($localStorage.dictionary) ? $localStorage.dictionary : {
+            lesson: [],
+            complited: []
+        };
         var dictionary = $localStorage.dictionary;
 
-
-        this.addWord = function (en, rus) {
+        this.addWordToLesson = function (en, rus) {
             if (angular.isString(rus) && angular.isString(en)) {
-                dictionary.push({
+                dictionary.lesson.push({
                     "en": en,
                     "rus": rus,
+                    "rus_success":false,
+                    "en_success":false,
                     "rus_errors": 0,
                     "en_errors": 0
                 });
@@ -20,8 +24,8 @@
         }
 
         this.getRundomWord = function () {
-            var number = Math.floor((Math.random() * dictionary.length-1) + 1);
-            console.log(dictionary[number]);
+            var number = Math.floor((Math.random() * dictionary.lesson.length - 1) + 1);
+            return dictionary.lesson[number];
         }
     });
 })(window);
