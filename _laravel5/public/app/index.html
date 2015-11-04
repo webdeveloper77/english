@@ -1,0 +1,83 @@
+<html ng-app="englishApp">
+    <head>
+        <title>English</title>
+
+        <base href="/app/" />
+
+        <script src="../assets/vendor/angular/angular.js"></script>
+        <script src="../assets/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="../assets/vendor/angular-aria/angular-aria.js"></script> 
+        <script src="../assets/vendor/angular-animate/angular-animate.js"></script> 
+        <script src="../assets/vendor/angular-material/angular-material.js"></script>
+
+        <script src="/app/app.js"></script>
+        <script src="/app/appRout.js"></script>
+        <script src="/app/controller.js"></script>
+
+        <link href='../assets/vendor/angular-material/angular-material.css' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../assets/vendor/components-font-awesome/css/font-awesome.min.css">
+
+
+        <style>
+            button i.fa{
+                font-size: 25px;
+            }
+            .md-button.md-hue-2.md-fab.md-custom-green {
+                background-color: rgb(40, 147, 53);
+            }
+            .md-button.md-hue-2.md-fab.md-custom-green.md-focused {
+                background-color: rgb(32, 118, 42);
+            }
+            .md-button.md-hue-2.md-fab.md-custom-blue {
+                background-color: rgb(40, 127, 147);
+            }
+            .md-button.md-hue-2.md-fab.md-custom-blue.md-focused {
+                background-color: rgb(26, 91, 106);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header" layout="row" layout-align="start center">
+            <div ui-sref="add" >
+                <md-button class="md-fab md-primary md-mini" aria-label="Create Dictionary">
+                    <i class="fa fa-plus-circle"></i>
+                    <md-tooltip>
+                        Create Dictionary
+                    </md-tooltip>
+                </md-button>
+            </div>
+
+            <md-button class="md-fab md-custom-blue md-mini md-hue-2" aria-label="Import">
+                <i class="fa fa-cloud-download"></i>
+                <md-tooltip>
+                    Import
+                </md-tooltip>
+            </md-button>
+            <div ui-sref="lesson" >
+                <md-button class="md-fab md-mini" aria-label="Start Lesson">
+                    <i class="fa fa-play-circle"></i>
+                    <md-tooltip>
+                        Start Lesson
+                    </md-tooltip>
+                </md-button>
+            </div>
+            <md-button class="md-fab md-primary md-mini md-hue-2" aria-label="View Dictionary">
+                <i class="fa fa-book"></i>
+                <md-tooltip>
+                    View Dictionary
+                </md-tooltip>
+            </md-button>
+            <md-button class="md-fab md-custom-green md-mini md-hue-2" aria-label="Export">
+                <i class="fa fa-cloud-upload"></i>
+                <md-tooltip>
+                    Export
+                </md-tooltip>
+            </md-button>
+        </div>
+
+        <div ui-view></div>
+
+    </body>
+</html>
