@@ -1,0 +1,19 @@
+{
+  "name": "english",
+  "homepage": "https://github.com/webdeveloper77/english",
+  "authors": [
+    "drinkcsis <webdevelop77@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular":"~1.5.*"
+  }
+}
