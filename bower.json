@@ -18,6 +18,8 @@
         "angular": "~1.5.*",
         "angular-material": "*",
         "components-font-awesome": "*",
-        "angular-ui-router": "*"
+        "angular-ui-router": "*",
+        "ngstorage": "*",
+        "angular-messages": "*"
     }
 }
