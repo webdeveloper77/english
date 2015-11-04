@@ -1,49 +1,22 @@
-<html>
+<html ng-app="englishApp">
     <head>
-        <title>Laravel</title>
+        <title>English</title>
 
-        <script src="bower_components/angular/angular.js"></script>
+        <script src="assets/vendor/angular/angular.js"></script>
+        <script src="assets/vendor/angular-aria/angular-aria.js"></script> 
+        <script src="assets/vendor/angular-animate/angular-animate.js"></script> 
+        <script src="assets/vendor/angular-material/angular-material.js"></script>
+
+        <script src="assets/angular/app.js"></script>
+        <script src="assets/angular/controller.js"></script>
+
+        <link href='assets/vendor/angular-material/angular-material.css' rel='stylesheet' type='text/css'>
+
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-                margin-bottom: 40px;
-            }
-
-            .quote {
-                font-size: 24px;
-            }
-        </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-                <div class="quote">dadasdasd</div>
-            </div>
-        </div>
+
     </body>
 </html>
